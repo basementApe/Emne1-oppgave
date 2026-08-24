@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="no">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sidetittel</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/emanuele.css">
-        <link rel="stylesheet" href="css/celine.css">
-        <link rel="stylesheet" href="css/hans.css">
-        <link rel="stylesheet" href="css/andreas.css">
-        <link rel="stylesheet" href="css/erik.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidetittel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/emanuele.css">
+    <link rel="stylesheet" href="css/celine.css">
+    <link rel="stylesheet" href="css/hans.css">
+    <link rel="stylesheet" href="css/andreas.css">
+    <link rel="stylesheet" href="css/erik.css">
+</head>
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li ><a href="#destinasjoner">Destinasjoner</a></li>
-                    <li><a href="#hvorfor">Hvorfor oss</a></li>
-                    <li><a href="#planlegg">Planlegg</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                </ul>
-            </nav>
-        </header>
+<body>
+    <header>
+        <h1> "SVG TBD" Grønn Reise </h1>
+        <nav id="header-nav">
+            <ul>
+                <li><a href="#destinations">Destinasjoner</a></li>
+                <li><a href="#why">Hvorfor oss</a></li>
+                <li><a href="#plan-trip">Planlegg</a></li>
+                <li><a href="#footer-contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            <section class="hero">
-                <h1>Reis bærekraftig</h1>
-                <p>Opplev Norge med omtanke for natur og lokalsamfunn</p>
-                <button>Planlegg reise</button>
-                <img src="bilder/hardanger-480.webp" alt="Natur og greier">
-            </section>
+    <main>
+        <section class="hero">
+            <h1>Reis bærekraftig</h1>
+            <p>Opplev Norge med omtanke for natur og lokalsamfunn</p>
+            <button id="plan-trip">Planlegg reise</button>
+            <img src="bilder/hardanger-480.webp" alt="Natur og greier">
+        </section>
 
+        <section id="destinations">
             <div class="card">
                 <img src="bilder/lofoten-480.webp" alt="Lofoten">
                 Lofoten - Fra 4,500 kr
@@ -50,43 +52,44 @@
                 Lofoten - Fra 3,200 kr
                 <button>Les mer</button>
             </div>
+        </section>
 
-            <section class="why">
-                <h2>Hvorfor velge oss?</h2>
+        <section id="why">
+            <h2>Hvorfor velge oss?</h2>
 
-                <div class="card">
-                    Bærekraftige reiser
+            <div class="card">
+                Bærekraftige reiser
+            </div>
+
+            <div class="card">
+                Lokal kultur
+            </div>
+
+            <div class="card">
+                Små grupper
+            </div>
+
+            <div class="card">
+                Klimanøytral
+            </div>
+            <br>
+        </section>
+
+
+        <section>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Navn</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
 
-                <div class="card">
-                    Lokal kultur
-                </div>
-
-                <div class="card">
-                    Små grupper
-                </div>
-
-                <div class="card">
-                    Klimanøytral
+                <div class="form-group">
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <br>
-            </section>
 
-
-            <section>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Navn</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">E-post</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <br>
-
-                    <!-- <form class="form-group">
+                <!-- <form class="form-group">
                         <label for="easy">Lett</label>
                         <input type="radio" name="difficulty" value="easy">
                         <br>
@@ -99,39 +102,45 @@
                         <input type="radio" name="difficulty" value="hard">
                         <br>
                     </form> -->
-                    <label for="level">Nivå: </label>
-                    <select id="level">
-                        <option value="easy">Lett</option>
-                        <option value="medium">Middels</option>
-                        <option value="hard">Vanskelig</option>
-                    </select>
-                    <br>
+                <label for="level">Nivå: </label>
+                <select id="level">
+                    <option value="easy">Lett</option>
+                    <option value="medium">Middels</option>
+                    <option value="hard">Vanskelig</option>
+                </select>
+                <br>
 
-                    <label for="date" required>Avreisedato: </label>
-                    <input type="date">
+                <label for="date" required>Avreisedato: </label>
+                <input type="date">
 
-                    <label for="checkbox">Nyhetsbrev: </label>
-                    <input type="checkbox">Jeg ønsker nyhetsbrev
-                    <br>
+                <label for="checkbox">Nyhetsbrev: </label>
+                <input type="checkbox">Jeg ønsker nyhetsbrev
+                <br>
 
-                    <button type="submit">Send melding</button>
-                </form>
-            </section>
-        </main>
+                <button type="submit">Send melding</button>
+            </form>
+        </section>
+    </main>
 
-        <footer>
-            <address>
-            E-post: <br>
-            «kontakt@gronnreise.no» 
-            <br>
-            <br>
-            Telefon: <br>
-            «22 33 44 55»
-            </address> 
-        </footer>
-    </body>
+    <footer>
+        <nav id="footer-nav">
+            <ul>
+                <li><a href="#destinations">Destinasjoner</a></li>
+                <li><a href="#why">Hvorfor oss</a></li>
+                <li><a href="#plan-trip">Planlegg</a></li>
+                <li><a href="#footer-contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <address id="footer-contact">
+            <p>
+                E-post: <br>
+                «kontakt@gronnreise.no»</p>
+            <p>
+                Telefon: <br>
+                «22 33 44 55»
+            </p>
+        </address>
+    </footer>
+</body>
+
 </html>
-
-
-
-
