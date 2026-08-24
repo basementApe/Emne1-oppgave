@@ -28,9 +28,7 @@
         <main>
             <section class="hero">
                 <h1>Reis bærekraftig</h1>
-                <p>
-                    Opplev Norge med omtanke for natur og lokalsamfunn
-                </p>
+                <p>Opplev Norge med omtanke for natur og lokalsamfunn</p>
                 <button>Planlegg reise</button>
                 <img src="bilder/hardanger-480.webp" alt="Natur og greier">
             </section>
@@ -71,16 +69,66 @@
                 <div class="card">
                     Klimanøytral
                 </div>
+                <br>
             </section>
+
 
             <section>
-                
-            </section>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Navn</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-            <footer>
-                e-post «kontakt@gronnreise.no», telefon «22 33 44 55»
-            </footer>
+                    <div class="form-group">
+                        <label for="email">E-post</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <br>
+
+                    <!-- <form class="form-group">
+                        <label for="easy">Lett</label>
+                        <input type="radio" name="difficulty" value="easy">
+                        <br>
+
+                        <label for="medium">Medium</label>
+                        <input type="radio" name="difficulty" value="medium">
+                        <br>
+
+                        <label for="hard">Vanskelig</label>
+                        <input type="radio" name="difficulty" value="hard">
+                        <br>
+                    </form> -->
+                    <label for="level">Nivå: </label>
+                    <select id="level">
+                        <option value="easy">Lett</option>
+                        <option value="medium">Middels</option>
+                        <option value="hard">Vanskelig</option>
+                    </select>
+                    <br>
+
+                    <label for="date" required>Avreisedato: </label>
+                    <input type="date">
+
+                    <label for="checkbox">Nyhetsbrev: </label>
+                    <input type="checkbox">Jeg ønsker nyhetsbrev
+                    <br>
+
+                    <button type="submit">Send melding</button>
+                </form>
+            </section>
         </main>
+
+        <footer>
+            <address>
+            E-post: <br>
+            «kontakt@gronnreise.no» 
+            <br>
+            <br>
+            Telefon: <br>
+            «22 33 44 55»
+            </address> 
+        </footer>
     </body>
 </html>
 
