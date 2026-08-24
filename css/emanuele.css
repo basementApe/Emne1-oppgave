@@ -1,1 +1,34 @@
 /*test!*/
+
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.container {
+    width: 100%;
+    max-width: 1224px;
+    /* margin: 0 auto;
+    padding: 1.5rem; */
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+:root {
+    --space-small: 0.5;
+    --space-medium: 1rem;
+    --space-large: 2rem;
+    --radius-medium: 0.75rem;
+    --font-body: Arial, Helvetica, sans-serif;
+}
