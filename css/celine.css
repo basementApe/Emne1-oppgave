@@ -1,0 +1,81 @@
+:root {
+    --color-primary: #1a472a;
+    --color-secondary: #e8f5e9;
+    --color-text: #222222;
+    --color-background: #ffffff;
+    --color-accent: #2e7d32;
+    /* knapper og CTA */
+
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: clamp(1.75rem, 4vw, 2.5rem);
+    --font-size-3xl: clamp(2rem, 5vw, 3.5rem);
+
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+    --radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-bottom: var(--space-md);
+    font-weight: bold;
+}
+
+h1 {font-size: var(--font-size-3xl);}
+h2 {font-size: var(--font-size-2xl);}
+h3 {font-size: var(--font-size-xl);}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+}
+
+.footer{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    text-align: center;
+    padding: var(--space-md);
+    margin-top: auto;
+}
