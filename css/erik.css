@@ -8,18 +8,23 @@ img {
     display: block;
 }
 
-.card {
+.hero
+{
+    padding: 2rem;
+}
+
+#destinations {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
-@media (min-width: 600px)
+@media (min-width: 768px)
 {
-    .card
+    #destinations
     {
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
