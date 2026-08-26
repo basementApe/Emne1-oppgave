@@ -104,11 +104,12 @@
                     <option value="hard">Vanskelig</option>
                 </select>
 
-                <label for="date" required>Avreisedato: </label>
-                <input type="date">
+                <label for="date">Avreisedato: </label>
+                <input type="date" id="date" name="date" required>
 
                 <label for="checkbox">Nyhetsbrev: </label>
-                <input type="checkbox">Jeg ønsker nyhetsbrev
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="checkbox">Jeg ønsker nyhetsbrev</label>
 
                 <button type="submit">Send melding</button>
             </form>
