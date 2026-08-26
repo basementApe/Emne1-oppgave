@@ -39,6 +39,7 @@ body {
     font-family: 'Arial', sans-serif;
     font-size: var(--font-size-base);
     background-color: var(--color-background);
+    color: var(--color-text);
     line-height: 1.6;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -63,22 +64,26 @@ h3 {font-size: var(--font-size-xl);}
 
 
 .header {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-rows: auto;
     gap: var(--space-md);
     padding: var(--space-md);
     background-color: var(--color-primary);
     color: var(--color-accent);
+    font-size: var(--font-size-2xl);
 }
 
-.hero{
-
+.header .nav-list {
+    display: flex;
+    gap: var(--space-md);
+    list-style: none;
+    font-size: var(--font-size-lg);
 }
 
-.card{
-
+.hero
+{
+    padding: 2rem;
 }
-
 
 a {
     color: var(--color-accent);
@@ -87,9 +92,25 @@ a {
     transition: color 0.3s ease;
 }
 
-.form-group{
+.form-group {
     margin-bottom: var(--space-md);
-    padding: var(--radius);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--space-xs);
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: var(--color-accent) 1px solid;
+    border-radius: var(--radius);
+    background: var(--color-background);
+    color: var(--color-text);
 }
 
 .footer{
@@ -105,4 +126,51 @@ a {
     grid-template-rows: auto;
     gap: var(--space-md);
     margin-top: var(--space-md);
+}
+
+
+
+
+/*Lånt av Erik*/
+
+
+#destinations {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.form
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.icon
+{
+    display: none;
+}
+
+@media (min-width: 768px)
+{
+    #destinations
+    {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .form
+    {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .icon
+    {
+        display: block;
+        grid-column: span 2;
+    }
 }
