@@ -33,8 +33,8 @@
             <button id="plan-trip">Planlegg reise</button>
         </section>
 
+        <h2>Populære destinasjoner</h2>
         <section id="destinations">
-            <h2>Populære destinasjoner</h2>
             <div class="card">
                 <img src="bilder/lofoten-480.png"
                     srcset="bilder/lofoten-480.png 400w, bilder/lofoten-768.png 800w, bilder/lofoten-1200.png 1200w"
@@ -84,7 +84,7 @@
         </section>
 
 
-        <section class="form">
+        <!-- <section class="form">
             <h2>Planlegg reise</h2>
             <form action="#" method="POST">
                 <div class="form-group">
@@ -118,6 +118,49 @@
                     <path d="M10 40 L25 20 L40 40 Z" fill="#445566" />
                     <path d="M40 40 L60 25 L80 40 Z" fill="#446677" />
                     <rect x="10" y="40" width="70" height="20" fill="#003366" />
+                </svg>
+            </div>
+        </section> -->
+        <section class="form">
+            <form class="form-fields" action="#" method="POST">
+                <h2>Planlegg reise</h2>
+                <div class="field">
+                    <label for="name">Navn: </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="level">Nivå: </label>
+                    <select id="level">
+                        <option value="easy">Lett</option>
+                        <option value="medium">Middels</option>
+                        <option value="hard">Vanskelig</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="date" required>Avreisedato: </label>
+                    <input type="date">
+                </div>
+
+                <div class="field">
+                    <label for="checkbox">Jeg ønsker nyhetsbrev</label>
+                    <input type="checkbox" class="checkbox">
+                </div>
+
+                <button type="submit">Send melding</button>
+            </form>
+
+            <div class="icon">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 40 L25 20 L40 40 Z" fill="#445566" />
+                    <path d="M40 40 L60 25 L80 40 Z" fill="#446677"/>
+                    <rect x="10" y="40" width="70" height="20" fill="#003366"/>
                 </svg>
             </div>
         </section>

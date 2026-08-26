@@ -28,6 +28,27 @@ img {
     gap: 1rem;
 }
 
+.form-fields
+{
+  display: grid;
+  gap: 1rem;
+  max-width: 400px;
+}
+
+.field
+{
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox
+{
+  justify-self: end;
+}
+
+
 .icon
 {
     display: none;
@@ -45,6 +66,11 @@ img {
     {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .form-fields
+    {
+          max-height: 60px;     /* Jeg la den her siden den får flere fields til å forsvinne i mobil-modus */
     }
 
     .icon
