@@ -52,15 +52,25 @@ img {
     display: block;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     line-height: 1.2;
     margin-bottom: var(--space-md);
     font-weight: bold;
 }
 
-h1 {font-size: var(--font-size-3xl);}
-h2 {font-size: var(--font-size-2xl);}
-h3 {font-size: var(--font-size-xl);}
+h1 {
+    font-size: var(--font-size-3xl);
+}
+
+h2 {
+    font-size: var(--font-size-2xl);
+}
+
+h3 {
+    font-size: var(--font-size-xl);
+}
 
 
 .header {
@@ -69,51 +79,37 @@ h3 {font-size: var(--font-size-xl);}
     gap: var(--space-md);
     padding: var(--space-md);
     background-color: var(--color-primary);
-    color: var(--color-accent);
+    color: var(--color-secondary);
     font-size: var(--font-size-2xl);
 }
 
-.header .nav-list {
+
+nav ul {
     display: flex;
-    gap: var(--space-md);
+    flex-direction: column;
     list-style: none;
     font-size: var(--font-size-lg);
 }
 
-.hero
-{
+.hero {
     padding: 2rem;
 }
 
 a {
-    color: var(--color-accent);
+    color: var(--color-text);
     text-decoration: none;
     display: inline-block;
     transition: color 0.3s ease;
 }
 
-.form-group {
-    margin-bottom: var(--space-md);
+.button {}
+
+a:hover,
+a:focus-visible {
+    color: var(--color-secondary);
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: var(--space-xs);
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: var(--color-accent) 1px solid;
-    border-radius: var(--radius);
-    background: var(--color-background);
-    color: var(--color-text);
-}
-
-.footer{
+.footer {
     background-color: var(--color-primary);
     color: var(--color-secondary);
     text-align: center;
@@ -121,55 +117,102 @@ a {
     margin-top: auto;
 }
 
-.footer-contact{
+.footer-contact {
     display: grid;
     grid-template-rows: auto;
     gap: var(--space-md);
     margin-top: var(--space-md);
 }
 
+/* celine */
+
+/* test */
+.destination-card {
+    border: 1px solid var(--color-primary);
+    padding: var(--space-md);
+    background-color: var(--color-secondary);
+}
+
+.destination-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+}
+
+/* test */
 
 
+#destinations,
+#why {
+    display: grid;
+    gap: var(--space-lg);
+    padding: var(--space-xl) var(--space-md);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
 
-/*Lånt av Erik*/
+#destinations h1,
+#why h2 {
+    grid-column: 1 / -1;
+}
 
+#why {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-primary);
+}
 
-#destinations {
+.form {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     gap: 1rem;
+
 }
 
-.form
-{
+.form-fields {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    justify-content: center;
     gap: 1rem;
+    max-width: 400px;
+    padding: 1rem;
 }
 
-.icon
-{
+.field {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox {
+    justify-self: end;
+}
+
+
+.icon {
     display: none;
 }
 
-@media (min-width: 768px)
-{
-    #destinations
-    {
+
+/* Media queries */
+
+@media (min-width: 768px) {
+    #destinations {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .form
-    {
+    .form {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .icon
-    {
+    .form-fields {
+        justify-content: start;
+        max-height: 60px;
+        /* Jeg la den her siden den får flere fields til å forsvinne i mobil-modus */
+    }
+
+    .icon {
         display: block;
         grid-column: span 2;
     }
