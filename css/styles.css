@@ -225,3 +225,5 @@ button {
     grid-column: span 2;
   }
 }
+
+/* .icon /.form må ses over, svg tar for mye plass og skaper masse luft til footer */

@@ -122,7 +122,6 @@ a:focus-visible {
     grid-template-rows: auto;
     gap: var(--space-md);
     margin-top: var(--space-md);
-<<<<<<< HEAD
 }
 
 /* celine */
@@ -217,6 +216,4 @@ a:focus-visible {
         display: block;
         grid-column: span 2;
     }
-=======
->>>>>>> 05ed2edd783730e3553c10c2c665f0a0841a8a5b
 }
