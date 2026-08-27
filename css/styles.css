@@ -58,6 +58,7 @@ h3 {
   line-height: 1.2;
   margin-bottom: var(--space-md);
   font-weight: bold;
+  padding: var(--space-md);
 }
 
 h1 {
@@ -227,6 +228,17 @@ button {
 /* Media queries */
 
 @media (min-width: 768px) {
+
+  #header-nav ul { 
+    flex-direction: row; 
+  }
+
+  #header-nav li {
+    margin-right: var(--space-xl);
+    padding-right: var(--space-lg);
+    border-right: 1px solid var(--color-text);
+    text-align: center;
+  }
 
   .hero {
     display: flex;
