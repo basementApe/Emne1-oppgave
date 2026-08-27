@@ -207,6 +207,11 @@ h1
     animation: shimmer 0.675s ease-out infinite alternate;
 }
 
+/* Bugfix h2 */
+h2
+{
+  white-space: nowrap;
+}
 
 /* Erik end */
 
