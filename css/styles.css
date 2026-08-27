@@ -125,11 +125,16 @@ button {
   margin-top: auto;
 }
 
-.footer-contact {
-  display: grid;
-  grid-template-rows: auto;
-  gap: var(--space-md);
-  margin-top: var(--space-md);
+.contact-info {
+  display: block;
+  margin: var(--space-xs) 0;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.contact-info:hover,
+.contact-info:focus-visible {
+  color: var(--color-secondary);
+  transform: translateY(-2px);
 }
 
 /* celine */
