@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reis bærekraftig</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <link rel="stylesheet" href="css/emanuele.css">
-    <link rel="stylesheet" href="css/celine.css">
-    <link rel="stylesheet" href="css/hans.css">
-    <link rel="stylesheet" href="css/andreas.css">
-    <link rel="stylesheet" href="css/erik.css"> -->
 </head>
 
 <body>
     <header class="header">
         <span> "SVG TBD" Grønn Reise </span>
-        <nav id="header-nav" class="nav-list">
+        <nav id="header-nav" class="nav-list" aria-label="Hovednavigasjon">
             <ul>
                 <li><a href="#destinations">Destinasjoner</a></li>
                 <li><a href="#why">Hvorfor oss</a></li>
@@ -29,18 +24,26 @@
     <main>
         <section class="hero">
 
-                <div class="hero-content">
-                    <h1>Reis bærekraftig</h1>
-                    <p>Opplev Norge med omtanke for natur og lokalsamfunn</p>
-                    <!-- <button id="plan-trip">Planlegg reise</button> -->
-                     <a href="#plan-trip" class="cta">Planlegg din reise</a>
-                </div>
+            <div class="hero-content">
+                <h1>Reis bærekraftig</h1>
+                <p>Opplev Norge med omtanke for natur og lokalsamfunn</p>
+                <!-- <button id="plan-trip">Planlegg reise</button> -->
+                <a href="#plan-trip" class="cta">Planlegg din reise</a>
+            </div>
 
             <div class="hero-icon">
                 <svg class="viewBox" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 40 L25 20 L40 40 Z" fill="#445566" />
                     <path d="M40 40 L60 25 L80 40 Z" fill="#446677" />
                     <rect x="10" y="40" width="70" height="20" fill="#003366" />
+                    <circle cx="55" cy="15" r="5" fill="#aaccff" />
+                    <circle cx="53" cy="14" r="4" fill="#ffffff" />
+                    <rect x="41" y="42" width="6" height="0.5" fill="#aaccff" />
+                    <rect x="44" y="43" width="5" height="0.5" fill="#aaccff" />
+                    <rect x="47" y="44" width="3" height="0.5" fill="#aaccff" />
+                    <rect x="46" y="45" width="3" height="0.5" fill="#aaccff" />
+                    <rect x="43" y="46" width="5" height="0.5" fill="#aaccff" />
+                    <rect x="39" y="47" width="7" height="0.5" fill="#aaccff" />
                 </svg>
             </div>
         </section>
@@ -48,72 +51,83 @@
         <h2>Populære destinasjoner</h2>
         <section id="destinations">
             <div class="destination-card">
-                                <picture>
-                    <source srcset="alternative.webp" type="bilder/webp">
-                    <source srcset="alternative.png" type="bilder/png">
-                    <source srcset="alternative.jpeg" type="bilder/jpeg">
-                    <img src="bilder/lofoten-480.webp"
-                        srcset="bilder/lofoten-480.webp 400w, bilder/lofoten-768.webp 800w, bilder/lofoten-1200.webp 1200w"
-                        sizes="(max-width: 1200px) 100vw, (max-width: 1200px) 75vw, 60vw" alt="Lofoten" width="1200"
-                        height="800">
-                    </picture>
-                Lofoten - Fra 4,500 kr
+                <picture>
+                    <source type="image/webp" srcset="bilder/lofoten-480.webp 480w,
+                    bilder/lofoten-768.webp 768w,
+                    bilder/lofoten-1200.webp 1200w" sizes="(max-width: 767px) 90vw,
+                    (max-width: 1023px) 45vw,30vw">
+                    <source type="image/png" srcset="bilder/lofoten-480.png 480w,
+                    bilder/lofoten-768.png 768w,
+                    bilder/lofoten-1200.png 1200w" sizes="(max-width: 767px) 90vw,
+                    (max-width: 1023px) 45vw,30vw">
+                    <img src="bilder/lofoten-768.png" alt="" width="1200" height="800" loading="lazy">
+                </picture>
+                <h3>Lofoten</h3>
+                <p>Fra 4 500 kr</p>
                 <button>Les mer</button>
             </div>
 
             <div class="destination-card">
                 <picture>
-                    <source srcset="alternative.webp" type="bilder/webp">
-                    <source srcset="alternative.png" type="bilder/png">
-                    <source srcset="alternative.jpeg" type="bilder/jpeg">
-                    <img src="bilder/svalbard-480.webp"
-                        srcset="bilder/svalbard-480.webp 400w, bilder/svalbard-768.webp 800w, bilder/svalbard-1200.webp 1200w"
-                        sizes="(max-width: 1200px) 100vw, (max-width: 1200px) 75vw, 60vw" alt="Svalbard" width="1200"
-                        height="800">
+                    <source type="image/webp" srcset="bilder/svalbard-480.webp 480w,
+                    bilder/svalbard-768.webp 768w,
+                    bilder/svalbard-1200.webp 1200w" sizes="(max-width: 767px) 90vw,
+                    (max-width: 1023px) 45vw,30vw">
+                    <source type="image/png" srcset="bilder/svalbard-480.png 480w,
+                    bilder/svalbard-768.png 768w,
+                    bilder/svalbard-1200.png 1200w" sizes="(max-width: 767px) 90vw,
+                    (max-width: 1023px) 45vw,30vw">
+                    <img src="bilder/svalbard-768.png" alt="" width="1200" height="800" loading="lazy">
                 </picture>
-                Svalbard - Fra 8,900 kr
+                <h3>Svalbard</h3>
+                <p>Fra 8 900 kr</p>
                 <button>Les mer</button>
             </div>
 
             <div class="destination-card">
                 <picture>
-                    <source srcset="alternative.webp" type="bilder/webp">
-                    <source srcset="alternative.png" type="bilder/png">
-                    <source srcset="alternative.jpeg" type="bilder/jpeg">
-                    <img src="bilder/hardanger-480.webp"
-                        srcset="bilder/hardanger-480.webp 400w, bilder/hardanger-768.webp 800w, bilder/hardanger-1200.webp 1200w"
-                        sizes="(max-width: 1200px) 100vw, (max-width: 1200px) 75vw, 60vw" alt="Hardanger" width="1200"
-                        height="800">
+                    <source type="image/webp" srcset="bilder/hardanger-480.webp 480w,
+                    bilder/hardanger-768.webp 768w,
+                    bilder/hardanger-1200.webp 1200w" sizes="(max-width: 767px) 90vw,
+                    (max-width: 1023px) 45vw,30vw">
+                    <source type="image/png" srcset="bilder/hardanger-480.png 480w,
+                    bilder/hardanger-768.png 768w,
+                    bilder/hardanger-1200.png 1200w" sizes="(max-width: 767px) 90vw,
+                    (max-width: 1023px) 45vw,30vw">
+                    <img src="bilder/hardanger-768.png" alt="" width="1200" height="800" loading="lazy">
                 </picture>
-                Hardanger - Fra 3,200 kr
+                <h3>Hardanger</h3>
+                <p>Fra 3 200 kr</p>
                 <button>Les mer</button>
             </div>
         </section>
 
-        <h3>Hvorfor velge oss?</h3>
-        <section id="why">
+        <section>
+            <h2>Hvorfor velge oss?</h2>
+            <section id="why">
 
-            <div class="card">
-                Bærekraftige reiser
-            </div>
+                <div class="card">
+                    Bærekraftige reiser
+                </div>
 
-            <div class="card">
-                Lokal kultur
-            </div>
+                <div class="card">
+                    Lokal kultur
+                </div>
 
-            <div class="card">
-                Små grupper
-            </div>
+                <div class="card">
+                    Små grupper
+                </div>
 
-            <div class="card">
-                Klimanøytral
-            </div>
+                <div class="card">
+                    Klimanøytral
+                </div>
+            </section>
         </section>
 
 
         <section id="plan-trip" class="form">
             <form class="form-fields" action="#" method="POST">
-                <h2>Planlegg reise</h2>
+                <h2>Planlegg din reise</h2>
                 <div class="field">
                     <label for="name">Navn: </label>
                     <input type="text" id="name" name="name" required>
@@ -129,21 +143,21 @@
                     <select id="level">
                         <option value="easy">Lett</option>
                         <option value="medium">Middels</option>
-                        <option value="hard">Vanskelig</option>
+                        <option value="hard">Krevende</option>
                     </select>
                 </div>
 
                 <div class="field">
-                    <label for="date" required>Avreisedato: </label>
-                    <input type="date">
+                    <label for="date">Dato: </label>
+                    <input type="date" id="date" name="date" required>
                 </div>
 
                 <div class="field">
                     <label for="checkbox">Jeg ønsker nyhetsbrev</label>
-                    <input type="checkbox" class="checkbox" checked>
+                    <input type="checkbox" class="checkbox" id="checkbox" name="checkbox" checked>
                 </div>
 
-                <button type="submit">Send melding</button>
+                <button type="submit">Send forespørsel</button>
             </form>
 
             <div class="icon">
@@ -158,18 +172,15 @@
 
     <footer class="footer">
         <address id="footer-contact" class="footer-contact">
-            <p>
-                E-post:
-                «kontakt@gronnreise.no»
-            </p>
-
-            <p>
-                Telefon:
-                «22 33 44 55»
-            </p>
+            <a href="mailto:kontakt@gronnreise.no" class="contact-info">
+                E-post: kontakt@gronnreise.no
+            </a>
+            <a href="tel:+4722334455" class="contact-info">
+                Telefon: +47 22 33 44 55
+            </a>
         </address>
 
-        <nav id="footer-nav" class="nav-list">
+        <nav id="footer-nav" class="nav-list" aria-label="Footer navigation">
             <ul>
                 <li><a href="#destinations">Destinasjoner</a></li>
                 <li><a href="#why">Hvorfor oss</a></li>
@@ -179,5 +190,4 @@
         </nav>
     </footer>
 </body>
-
 </html>
