@@ -1,3 +1,18 @@
+
+/* 
+Siden bruker semantisk html med taggene <header>, <nav>, <main> osv.
+
+<nav> taggen brukes for <ul> og <li>. Ikke så mye å si om det kanskje?
+
+Under hero-seksjonen har jeg lagt til litt inline svg som er kapslet inn i en <div> med klasse "hero". Under hero kommer en overskrift, tekst, og link (cta) i 
+"hero-content"-elementet, pluss svg-elementet med klasse-navnet "hero-icon", som også hører til i denne seksjonen. Viewbox har også fått sin egen klasse her for 
+å kunne begrense den interne maksimumsbredden og høyden til SVGen via CSS. Hvorfor jeg ikke gjør det i hero-icon isteden er et veldig godt spørsmål. Det var pga 
+noe greier... nødvendig med mer testing!
+
+Selve SVG-bildet består av inline-SVG der jeg tegner opp noen veldig enkle geometriske figurer via circle, rect, og path.
+
+*/
+
 * {
     box-sizing: border-box;
 }
