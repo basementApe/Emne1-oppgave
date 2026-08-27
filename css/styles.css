@@ -131,6 +131,7 @@ button {
   color: var(--color-accent);
   text-decoration: none;
 }
+
 .contact-info:hover,
 .contact-info:focus-visible {
   color: var(--color-secondary);
@@ -144,12 +145,18 @@ button {
   border: 1px solid var(--color-primary);
   padding: var(--space-md);
   background-color: var(--color-secondary);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
 .destination-card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-4px);
   transition: all 0.3s ease;
+}
+
+.destination-card img {
+  border-radius: var(--radius);
 }
 
 /* test */
@@ -162,17 +169,16 @@ button {
   padding: var(--space-xl) var(--space-md);
 }
 
-.hero
-{
+.hero {
   display: block;
 }
 
-  .hero-icon {
-    min-width: 20rem;
-    max-width: 25rem;
-    display: block;
-    grid-column: span 2;
-  }
+.hero-icon {
+  min-width: 20rem;
+  max-width: 25rem;
+  display: block;
+  grid-column: span 2;
+}
 
 
 #destinations h1,
@@ -222,8 +228,7 @@ button {
 
 @media (min-width: 768px) {
 
-  .hero
-  {
+  .hero {
     display: flex;
     flex-direction: row;
   }
@@ -251,8 +256,7 @@ button {
     grid-column: span 2;
   }
 
-  .viewBox
-  {
+  .viewBox {
     max-width: 30rem;
     max-height: 30rem;
   }
