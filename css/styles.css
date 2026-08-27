@@ -153,6 +153,10 @@ button {
   margin-top: auto;
 }
 
+.footer a {
+  color: inherit;
+}
+
 .contact-info {
   display: block;
   margin: var(--space-xs) 0;
@@ -165,52 +169,6 @@ button {
   color: var(--color-secondary);
   transform: translateY(-2px);
 }
-
-/* Animations/transitions (Skal vi sortere alt fra begge disse kategoriene her?) */
-
-/* Erik: header slide- og fade-in */
-@keyframes header-slide
-{
-  from
-  {
-    opacity: 0;
-    transform: translateX(-6rem);
-  }
-  to
-  {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-h1
-{
-  animation: header-slide 0.5s ease-out;
-}
-
-/* keyframe animasjon på hero-svg */
-@keyframes shimmer {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(1px);
-    }
-}
-/* Eneste variasjon her er litt forskjellig timing på hver klasse/linje */
-.moon-line-1 {
-    animation: shimmer 0.8s ease-out infinite alternate;
-}
-.moon-line-2 {
-    animation: shimmer 0.9s ease-out infinite alternate;
-}
-.moon-line-3 {
-    animation: shimmer 0.675s ease-out infinite alternate;
-}
-
-
-/* Erik end */
-
-
 
 /* celine */
 
@@ -322,6 +280,19 @@ h1
   #destinations {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-xl);
+    text-align: left;
+  }
+
+  #footer-nav ul {
+    flex-direction: row;
+    gap: var(--space-lg);
   }
 
   .form {
