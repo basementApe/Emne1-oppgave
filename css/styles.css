@@ -166,6 +166,33 @@ button {
   transform: translateY(-2px);
 }
 
+/* Animations/transitions (Skal vi sortere alt fra begge disse kategoriene her?) */
+
+/* Erik: keyframe animasjon på hero-svg */
+@keyframes shimmer {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(1px);
+    }
+}
+/* Eneste variasjon her er litt forskjellig timing på hver klasse/linje */
+.moon-line-1 {
+    animation: shimmer 0.8s ease-out infinite alternate;
+}
+.moon-line-2 {
+    animation: shimmer 0.9s ease-out infinite alternate;
+}
+.moon-line-3 {
+    animation: shimmer 0.675s ease-out infinite alternate;
+}
+
+
+/* Erik end */
+
+
+
 /* celine */
 
 /* test */
