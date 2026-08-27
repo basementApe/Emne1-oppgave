@@ -163,7 +163,8 @@ button {
 }
 
   .hero-icon {
-    min-width: 10rem;
+    min-width: 20rem;
+    max-width: 25rem;
     display: block;
     grid-column: span 2;
   }
