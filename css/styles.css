@@ -153,6 +153,10 @@ button {
   margin-top: auto;
 }
 
+.footer a {
+  color: inherit;
+}
+
 .contact-info {
   display: block;
   margin: var(--space-xs) 0;
@@ -327,6 +331,19 @@ h2
   #destinations {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-xl);
+    text-align: left;
+  }
+
+  #footer-nav ul {
+    flex-direction: row;
+    gap: var(--space-lg);
   }
 
   .form {
