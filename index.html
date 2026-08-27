@@ -57,13 +57,20 @@
         <section id="destinations">
             <div class="destination-card">
                 <picture>
-                    <source srcset="alternative.webp" type="bilder/webp">
-                    <source srcset="alternative.png" type="bilder/png">
-                    <source srcset="alternative.jpeg" type="bilder/jpeg">
-                    <img src="bilder/lofoten-480.webp"
-                        srcset="bilder/lofoten-480.webp 400w, bilder/lofoten-768.webp 800w, bilder/lofoten-1200.webp 1200w"
-                        sizes="(max-width: 1200px) 100vw, (max-width: 1200px) 75vw, 60vw" alt="Lofoten" width="1200"
-                        height="800">
+                    <source type="image/webp" 
+                    srcset="bilder/lofoten-480.webp 480w,
+                    bilder/lofoten-768.webp 768w,
+                    bilder/lofoten-1200.webp 1200w" sizes="(max-width: 767px) 90vw,
+                    (max-width: 1023px) 45vw,30vw">
+                    <source type="image/png" srcset="bilder/lofoten-480.png 480w,
+                    bilder/lofoten-768.png 768w,
+                    bilder/lofoten-1200.png 1200w" sizes="(max-width: 767px) 90vw,
+                    (max-width: 1023px) 45vw,30vw">
+                    <img 
+                    src="bilder/lofoten-768.png" 
+                    alt="" 
+                    width="1200" height="800"
+                    loading="lazy">
                 </picture>
                 <h3>Lofoten</h3>
                 <p>Fra 4,500 kr</p>
@@ -72,13 +79,20 @@
 
             <div class="destination-card">
                 <picture>
-                    <source srcset="alternative.webp" type="bilder/webp">
-                    <source srcset="alternative.png" type="bilder/png">
-                    <source srcset="alternative.jpeg" type="bilder/jpeg">
-                    <img src="bilder/svalbard-480.webp"
-                        srcset="bilder/svalbard-480.webp 400w, bilder/svalbard-768.webp 800w, bilder/svalbard-1200.webp 1200w"
-                        sizes="(max-width: 1200px) 100vw, (max-width: 1200px) 75vw, 60vw" alt="Svalbard" width="1200"
-                        height="800">
+                    <source type="image/webp" 
+                    srcset="bilder/svalbard-480.webp 480w,
+                    bilder/svalbard-768.webp 768w,
+                    bilder/svalbard-1200.webp 1200w" sizes="(max-width: 767px) 90vw,
+                    (max-width: 1023px) 45vw,30vw">
+                    <source type="image/png" srcset="bilder/svalbard-480.png 480w,
+                    bilder/svalbard-768.png 768w,
+                    bilder/svalbard-1200.png 1200w" sizes="(max-width: 767px) 90vw,
+                    (max-width: 1023px) 45vw,30vw">
+                    <img 
+                    src="bilder/svalbard-768.png" 
+                    alt="" 
+                    width="1200" height="800"
+                    loading="lazy">
                 </picture>
                 <h3>Svalbard</h3>
                 <p>Fra 8,900 kr</p>
@@ -87,12 +101,29 @@
 
             <div class="destination-card">
                 <picture>
-                    <source srcset="alternative.webp" type="bilder/webp">
-                    <source srcset="alternative.png" type="bilder/png">
-                    <source srcset="alternative.jpeg" type="bilder/jpeg">
-                    <img src="bilder/hardanger-480.webp"
-                        srcset="bilder/hardanger-480.webp 400w, bilder/hardanger-768.webp 800w, bilder/hardanger-1200.webp 1200w"
-                        sizes="(max-width: 1200px) 100vw, (max-width: 1200px) 75vw, 60vw" alt="Hardanger" width="1200"
+                    <source type="image/webp" 
+                    srcset="bilder/hardanger-480.webp 480w,
+                    bilder/hardanger-768.webp 768w,
+                    bilder/hardanger-1200.webp 1200w" sizes="(max-width: 767px) 90vw,
+                    (max-width: 1023px) 45vw,30vw">
+                    <source type="image/png" srcset="bilder/hardanger-480.png 480w,
+                    bilder/hardanger-768.png 768w,
+                    bilder/hardanger-1200.png 1200w" sizes="(max-width: 767px) 90vw,
+                    (max-width: 1023px) 45vw,30vw">
+                    <img 
+                    src="bilder/hardanger-768.png" 
+                    alt="" 
+                    width="1200" height="800"
+                    loading="lazy">
+                </picture>
+                <h3>Hardanger</h3>
+                <p>Fra 3,200 kr</p>
+                <button>Les mer</button>
+            </div>
+        </section>
+
+        <h2>Hvorfor velge oss?</h2>
+        <section id="why">
                         height="800">
                 </picture>
                 <h3>Hardanger</h3>
@@ -101,7 +132,7 @@
             </div>
         </section>
 
-        <h3>Hvorfor velge oss?</h3>
+        <h2>Hvorfor velge oss?</h2>
         <section id="why">
 
             <div class="card">
@@ -187,4 +218,5 @@
         </nav>
     </footer>
 </body>
+
 </html>

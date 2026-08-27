@@ -148,12 +148,12 @@ button {
   background-color: var(--color-secondary);
   border-radius: var(--radius);
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .destination-card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-4px);
-  transition: all 0.3s ease;
 }
 
 .destination-card img {
