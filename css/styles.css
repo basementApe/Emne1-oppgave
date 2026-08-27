@@ -72,7 +72,6 @@ h3 {
   font-size: var(--font-size-xl);
 }
 
-
 .header {
   display: grid;
   grid-template-rows: auto;
@@ -83,7 +82,6 @@ h3 {
   font-size: var(--font-size-2xl);
 }
 
-
 nav ul {
   display: flex;
   flex-direction: column;
@@ -92,7 +90,36 @@ nav ul {
 }
 
 .hero {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* padding: 2rem; */
+  gap: var(--space-xl);
+  padding: var(--space-xl) var(--space-md);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.hero-content > h1 {
+  margin-bottom: 0;
+}
+
+.hero-icon > svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cta {
+  align-self: flex-start;
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-accent);
+  color: var(--color-secondary);  
+  border-radius: var(--radius);
+  font-weight: 700;
 }
 
 a {
@@ -157,16 +184,16 @@ button {
   padding: var(--space-xl) var(--space-md);
 }
 
-.hero
+/* .hero
 {
   display: block;
-}
+} */
 
-  .hero-icon {
-    min-width: 10rem;
-    display: block;
-    grid-column: span 2;
-  }
+.hero-icon {
+  width: 100%;
+  max-width: 30rem;
+  align-self: center;
+}
 
 
 #destinations h1,
