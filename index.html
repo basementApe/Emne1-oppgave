@@ -73,7 +73,7 @@
                     loading="lazy">
                 </picture>
                 <h3>Lofoten</h3>
-                <p>Fra 4,500 kr</p>
+                <p>Fra 4 500 kr</p>
                 <button>Les mer</button>
             </div>
 
@@ -95,7 +95,7 @@
                     loading="lazy">
                 </picture>
                 <h3>Svalbard</h3>
-                <p>Fra 8,900 kr</p>
+                <p>Fra 8 900 kr</p>
                 <button>Les mer</button>
             </div>
 
@@ -117,7 +117,7 @@
                     loading="lazy">
                 </picture>
                 <h3>Hardanger</h3>
-                <p>Fra 3,200 kr</p>
+                <p>Fra 3 200 kr</p>
                 <button>Les mer</button>
             </div>
         </section>
@@ -148,7 +148,7 @@
 
         <section id="plan-trip" class="form">
             <form class="form-fields" action="#" method="POST">
-                <h2>Planlegg reise</h2>
+                <h2>Planlegg din reise</h2>
                 <div class="field">
                     <label for="name">Navn: </label>
                     <input type="text" id="name" name="name" required>
@@ -164,21 +164,21 @@
                     <select id="level">
                         <option value="easy">Lett</option>
                         <option value="medium">Middels</option>
-                        <option value="hard">Vanskelig</option>
+                        <option value="hard">Krevende</option>
                     </select>
                 </div>
 
                 <div class="field">
-                    <label for="date" required>Avreisedato: </label>
-                    <input type="date">
+                    <label for="date">Dato: </label>
+                    <input type="date" id="date" name="date" required>
                 </div>
 
                 <div class="field">
                     <label for="checkbox">Jeg ønsker nyhetsbrev</label>
-                    <input type="checkbox" class="checkbox" checked>
+                    <input type="checkbox" class="checkbox" id="checkbox" name="checkbox" checked>
                 </div>
 
-                <button type="submit">Send melding</button>
+                <button type="submit">Send forespørsel</button>
             </form>
 
             <div class="icon">
@@ -211,5 +211,4 @@
         </nav>
     </footer>
 </body>
-
 </html>

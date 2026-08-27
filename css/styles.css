@@ -158,6 +158,7 @@ button {
 
 .destination-card img {
   border-radius: var(--radius);
+  object-fit: cover;
 }
 
 /* test */
