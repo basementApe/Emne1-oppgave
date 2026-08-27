@@ -168,7 +168,26 @@ button {
 
 /* Animations/transitions (Skal vi sortere alt fra begge disse kategoriene her?) */
 
-/* Erik: keyframe animasjon på hero-svg */
+/* Erik: header slide- og fade-in */
+@keyframes header-slide
+{
+  from
+  {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to
+  {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+h1
+{
+  animation: header-slide 0.5s ease-out;
+}
+
+/* keyframe animasjon på hero-svg */
 @keyframes shimmer {
     from {
         transform: translateX(0);
