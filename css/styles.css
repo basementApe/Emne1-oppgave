@@ -94,6 +94,14 @@ nav ul {
 
 .hero {
   padding: 2rem;
+  display: block;
+}
+
+.hero-icon {
+  min-width: 20rem;
+  max-width: 25rem;
+  display: block;
+  grid-column: span 2;
 }
 
 a {
@@ -170,18 +178,6 @@ button {
   gap: var(--space-lg);
   padding: var(--space-xl) var(--space-md);
 }
-
-.hero {
-  display: block;
-}
-
-.hero-icon {
-  min-width: 20rem;
-  max-width: 25rem;
-  display: block;
-  grid-column: span 2;
-}
-
 
 #destinations h1,
 #why h2 {
