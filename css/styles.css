@@ -229,8 +229,8 @@ button {
 
 @media (min-width: 768px) {
 
-  #header-nav ul { 
-    flex-direction: row; 
+  #header-nav ul {
+    flex-direction: row;
   }
 
   #header-nav li {
@@ -271,5 +271,14 @@ button {
   .viewBox {
     max-width: 30rem;
     max-height: 30rem;
+  }
+}
+
+/* Reduce motion */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
   }
 }
