@@ -116,18 +116,6 @@ nav ul {
   display: block;
 }
 
-@keyframes hero-heading-fade-slide {
-  from {
-    opacity: 0;
-    transform: translateY(1rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-}
-
 .cta {
   align-self: flex-start;
   padding: var(--space-md) var(--space-lg);
@@ -269,6 +257,45 @@ button {
 .icon {
   display: none;
 }
+
+
+/* Animations & transitions */
+
+@keyframes hero-heading-fade-slide {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+/* keyframe animasjon på hero-svg */
+@keyframes shimmer {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(1px);
+    }
+}
+/* Eneste variasjon her er litt forskjellig timing på hver klasse/linje */
+.moon-line-1 {
+    animation: shimmer 0.8s ease-out infinite alternate;
+}
+.moon-line-2 {
+    animation: shimmer 0.9s ease-out infinite alternate;
+}
+.moon-line-3 {
+    animation: shimmer 0.675s ease-out infinite alternate;
+}
+
+
+
+/*  */
 
 
 /* Media queries */
