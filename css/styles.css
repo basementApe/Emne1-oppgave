@@ -351,15 +351,11 @@ button {
 
 
 /*----------------------------------------------------------------------------------------------*/
-/*FIKSE FOOTER, CARDS PÅ HVORFOR VELGE OSS, 
-SAMT SVG IKONER TIL HVORFOR VELGE OSS + OVERSKRIFTEN*/
+/*CARDS PÅ HVORFOR VELGE OSS, 
+SAMT SVG IKONER TIL HVORFOR VELGE OSS*/
 /*----------------------------------------------------------------------------------------------*/
 
 
 /*-----------------BUGS PER NÅ OG VIDERE FIXES SOM MÅ GJØRES-----------------*/
 /* Send forespørsel knapp forsvinner i desktop view, men vises i mobil view. FIKS!
-
-*Spørsmål 4 spør direkte om hvordan dere har brukt @keyframes – men det finnes ingen 
-@keyframes-regel noe sted i CSS-en. Del 2 krever en fade/slide-inn-animasjon på 
-hero-overskriften, og den er ikke laget.*/
 /*----------------------------------------------------------------------------------------------*/
