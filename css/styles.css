@@ -94,7 +94,6 @@ nav ul {
 .hero {
   display: flex;
   flex-direction: column;
-  /* padding: 2rem; */
   gap: var(--space-xl);
   padding: var(--space-xl) var(--space-md);
 }
@@ -172,9 +171,6 @@ button {
   transform: translateY(-2px);
 }
 
-/* celine */
-
-/* test */
 .destination-card {
   border: 1px solid var(--color-primary);
   padding: var(--space-md);
@@ -194,9 +190,6 @@ button {
   object-fit: cover;
 }
 
-/* test */
-
-
 #destinations,
 #why {
   display: grid;
@@ -204,17 +197,11 @@ button {
   padding: var(--space-xl) var(--space-md);
 }
 
-/* .hero
-{
-  display: block;
-} */
-
 .hero-icon {
   width: 100%;
   max-width: 30rem;
   align-self: center;
 }
-
 
 #destinations h1,
 #why h2 {
@@ -253,7 +240,6 @@ button {
   justify-self: end;
 }
 
-
 .icon {
   display: none;
 }
@@ -284,6 +270,7 @@ button {
   }
 }
 
+
 /* Eneste variasjon her er litt forskjellig timing på hver klasse/linje */
 .moon-line-1 {
   animation: shimmer 0.8s ease-out infinite alternate;
@@ -298,11 +285,6 @@ button {
 }
 
 
-
-/*  */
-
-
-/* Media queries */
 
 @media (min-width: 768px) {
 
@@ -371,81 +353,6 @@ button {
   }
 }
 
-/* TEST TABLET */
-/* @media (min-width: 1024px) {
-
-  .hero,
-  #destinations {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  #header-nav ul {
-    flex-direction: row;
-  }
-
-  #header-nav li {
-    margin-right: var(--space-xl);
-    padding-right: var(--space-lg);
-    border-right: 1px solid var(--color-text);
-    text-align: center;
-  }
-
-  .hero {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .hero-content,
-  .hero-icon {
-    flex: 1;
-  }
-
-  #destinations {
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--space-xl);
-    text-align: left;
-    padding-top: 2rem;
-  }
-
-  #footer-nav ul {
-    flex-direction: row;
-    gap: var(--space-lg);
-  }
-
-  .form {
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-height: 24rem;
-  }
-
-  .form-fields {
-    justify-content: start;
-    max-height: 60px;
-  }
-
-  .icon {
-    min-width: 10rem;
-    display: block;
-    grid-column: span 2;
-  }
-
-  .viewBox {
-    max-width: 30rem;
-    max-height: 30rem;
-  }
-} */
-
-/* TEST TABLET */
-
-/* Reduce motion */
 
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -453,8 +360,3 @@ button {
     animation: none !important;
   }
 }
-
-
-/*----------------------------------------------------------------------------------------------*/
-/*CARDS PÅ HVORFOR VELGE OSS*/
-/*----------------------------------------------------------------------------------------------*/
