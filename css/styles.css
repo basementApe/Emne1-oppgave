@@ -144,6 +144,20 @@ button {
   cursor: pointer;
 }
 
+.cta,
+button {
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  text-decoration: none;
+}
+
+.cta:hover ,
+button:hover {
+  background-color: var(--color-primary);
+}
+
 .footer {
   background-color: var(--color-primary);
   color: var(--color-secondary);
@@ -152,14 +166,14 @@ button {
   margin-top: auto;
 }
 
-.footer a {
+.footer a,
+.header a {
   color: inherit;
 }
 
 .contact-info {
   display: block;
   margin: var(--space-xs) 0;
-  color: var(--color-accent);
   text-decoration: none;
 }
 
@@ -370,4 +384,10 @@ select:focus-visible {
     transition: none !important;
     animation: none !important;
   }
-}
+
+    .destination-card:hover ,
+    .contact-info:hover ,
+    .contact-info:focus-visible {
+      transform: none
+    }
+  }
