@@ -132,10 +132,9 @@ a {
   transition: color 0.3s ease;
 }
 
-a:hover,
-a:focus-visible {
+a:hover {
   color: var(--color-secondary);
-  transform: translateY(-4px);
+  text-decoration: underline;
 }
 
 button {
@@ -293,6 +292,19 @@ button {
     animation: shimmer 0.675s ease-out infinite alternate;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: var(--space-xs);
+}
+
+.header a:focus-visible,
+.footer a:focus-visible {
+  outline-color: var(--color-secondary);
+}
+
 
 
 /*  */
@@ -385,8 +397,4 @@ SAMT SVG IKONER TIL HVORFOR VELGE OSS + OVERSKRIFTEN*/
 
 /*-----------------BUGS PER NÅ OG VIDERE FIXES SOM MÅ GJØRES-----------------*/
 /* Send forespørsel knapp forsvinner i desktop view, men vises i mobil view. FIKS!
-
-*Spørsmål 4 spør direkte om hvordan dere har brukt @keyframes – men det finnes ingen 
-@keyframes-regel noe sted i CSS-en. Del 2 krever en fade/slide-inn-animasjon på 
-hero-overskriften, og den er ikke laget.*/
 /*----------------------------------------------------------------------------------------------*/
