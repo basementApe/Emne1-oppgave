@@ -59,7 +59,6 @@ h3 {
   margin-bottom: var(--space-md);
   font-weight: bold;
   padding: var(--space-md);
-  white-space: nowrap;
 }
 
 h1 {
