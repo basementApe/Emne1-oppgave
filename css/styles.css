@@ -131,10 +131,9 @@ a {
   transition: color 0.3s ease;
 }
 
-a:hover,
-a:focus-visible {
+a:hover {
   color: var(--color-secondary);
-  transform: translateY(-4px);
+  text-decoration: underline;
 }
 
 button {
@@ -282,6 +281,19 @@ button {
 
 .moon-line-3 {
   animation: shimmer 0.675s ease-out infinite alternate;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: var(--space-xs);
+}
+
+.header a:focus-visible,
+.footer a:focus-visible {
+  outline-color: var(--color-secondary);
 }
 
 
